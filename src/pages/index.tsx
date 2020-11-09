@@ -1,3 +1,9 @@
-const Home: React.FC = () => <h1>It works!</h1>
+import styles from '../styles/home.module.scss';
 
-export default Home
+const Home: React.FC = () => (
+  <div className={styles.layout}>
+    <h1>Welcome to Next.js starter</h1>
+  </div>
+);
+
+export default Home;
