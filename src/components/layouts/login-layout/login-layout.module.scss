@@ -1,0 +1,50 @@
+@import '../../../styles/lib/colors';
+
+.layout {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 40px;
+  width: 400px;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label,
+    input {
+      display: block;
+      width: 100%;
+    }
+
+    label {
+      font-size: 0.8em;
+      font-weight: bold;
+      margin: 10px 0 2px 0;
+      text-transform: lowercase;
+    }
+
+    input {
+      border: 1px solid $light-border;
+      padding: 6px 4px;
+    }
+
+    button {
+      border: 1px solid $light-border;
+      cursor: pointer;
+      margin: 24px 0 10px 0;
+      padding: 10px;
+
+      &:hover {
+        border: 1px solid darken($light-border, 10%);
+      }
+    }
+  }
+}

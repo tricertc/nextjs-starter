@@ -1,3 +1,32 @@
+@import '../styles/lib/colors';
+
 .layout {
   padding: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+
+  a {
+    border-radius: 4px;
+    color: $white;
+    padding: 6px 10px;
+    text-decoration: none;
+
+    &:first-of-type {
+      background-color: $brand-primary;
+      margin-right: 10px;
+
+      &:hover {
+        background-color: darken($brand-primary, 10%);
+      }
+    }
+
+    &:last-of-type {
+      background-color: $brand-secondary;
+      &:hover {
+        background-color: darken($brand-secondary, 10%);
+      }
+    }
+  }
 }
