@@ -1,9 +1,13 @@
-import styles from '../styles/home.module.scss';
+import { NextPage } from "next";
+import Layout from "~/components/layout";
+import Hero from "~/components/hero";
 
-const Home: React.FC = () => (
-  <div className={styles.layout}>
-    <h1>Welcome to Next.js starter</h1>
-  </div>
+const Home: NextPage = () => (
+  <Layout>
+    <div className="p-8">
+      <Hero />
+    </div>
+  </Layout>
 );
 
 export default Home;
